@@ -1,0 +1,15 @@
+
+export interface AddProductToWishListProps {
+    onAddToWishList: () => void
+    onRequestClose: () => void
+}
+
+export const AddProductToWishList = ({onAddToWishList, onRequestClose }: AddProductToWishListProps) => {
+    return (
+        <>
+            <span>Deseja adicionar aos favoritos?</span>
+            <button onClick={onAddToWishList}>Sim</button>
+            <button onClick={onRequestClose}>Não</button>
+        </>
+    )
+}
